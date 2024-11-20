@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_52392660072b61cce8669757803f8cdf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_52392660072b61cce8669757803f8cdf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_52392660072b61cce8669757803f8cdf = L.map(
+                "map_52392660072b61cce8669757803f8cdf",
+                {
+                    center: [48.8554814, 2.3604077],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f438d7c6342d214186c9f03e50f12d4d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f438d7c6342d214186c9f03e50f12d4d.addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var marker_6a44bfc5cc86abd1e5e91a0d7bdf57ae = L.marker(
+                [48.8554814, 2.3604077],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_d20f06b4afb1f70cc4fd8c0526ab9c0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a44bfc5cc86abd1e5e91a0d7bdf57ae.setIcon(icon_d20f06b4afb1f70cc4fd8c0526ab9c0e);
+        
+    
+        var popup_f954ec631727ba735d2586b7b1bdf6ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f12ef4510c1966d6d2efca5abedc2c80 = $(`<div id="html_f12ef4510c1966d6d2efca5abedc2c80" style="width: 100.0%; height: 100.0%;">Adresse : 10 Rue de Rivoli, Paris</div>`)[0];
+                popup_f954ec631727ba735d2586b7b1bdf6ed.setContent(html_f12ef4510c1966d6d2efca5abedc2c80);
+            
+        
+
+        marker_6a44bfc5cc86abd1e5e91a0d7bdf57ae.bindPopup(popup_f954ec631727ba735d2586b7b1bdf6ed)
+        ;
+
+        
+    
+    
+            var marker_f6038fc8ac4545f04c22012233e9fd9d = L.marker(
+                [48.85355351439652, 2.3639122769236565],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_f8f215a38df087516a1158a9db753602 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f6038fc8ac4545f04c22012233e9fd9d.setIcon(icon_f8f215a38df087516a1158a9db753602);
+        
+    
+        var popup_cfc97303f2b8279f58f82737f297ad51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_985c034f339a0414666371dfeee2a7e1 = $(`<div id="html_985c034f339a0414666371dfeee2a7e1" style="width: 100.0%; height: 100.0%;">Neuve Saint-Pierre - Beautreillis - Vélos disponibles: 12 - Distance: 334.21 m</div>`)[0];
+                popup_cfc97303f2b8279f58f82737f297ad51.setContent(html_985c034f339a0414666371dfeee2a7e1);
+            
+        
+
+        marker_f6038fc8ac4545f04c22012233e9fd9d.bindPopup(popup_cfc97303f2b8279f58f82737f297ad51)
+        ;
+
+        
+    
+    
+            var marker_36cb9ffe880362d422e1c11ed406fba4 = L.marker(
+                [48.853899645527, 2.3569472506642],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_1b2dc3489b96a7c388261a1b8956ad60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36cb9ffe880362d422e1c11ed406fba4.setIcon(icon_1b2dc3489b96a7c388261a1b8956ad60);
+        
+    
+        var popup_fe446f173445bbcf3be71516b11fde8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_691e1d07e3a8279cfa96a707a8ec22c7 = $(`<div id="html_691e1d07e3a8279cfa96a707a8ec22c7" style="width: 100.0%; height: 100.0%;">Hôtel de Ville - Pont-Marie - Vélos disponibles: 28 - Distance: 308.28 m</div>`)[0];
+                popup_fe446f173445bbcf3be71516b11fde8d.setContent(html_691e1d07e3a8279cfa96a707a8ec22c7);
+            
+        
+
+        marker_36cb9ffe880362d422e1c11ed406fba4.bindPopup(popup_fe446f173445bbcf3be71516b11fde8d)
+        ;
+
+        
+    
+    
+            var marker_d76cb54860954b72ecb14d3d6db1bd78 = L.marker(
+                [48.855949910497, 2.3563823103905],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_f2ce6e08ede448c7aeb06e8929d25980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d76cb54860954b72ecb14d3d6db1bd78.setIcon(icon_f2ce6e08ede448c7aeb06e8929d25980);
+        
+    
+        var popup_7cd2a8d88505728b6a5d0f3113617c2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf73944a9a3b5e4b27997e9629525014 = $(`<div id="html_bf73944a9a3b5e4b27997e9629525014" style="width: 100.0%; height: 100.0%;">Mairie du 4ème - Vélos disponibles: 20 - Distance: 299.08 m</div>`)[0];
+                popup_7cd2a8d88505728b6a5d0f3113617c2a.setContent(html_bf73944a9a3b5e4b27997e9629525014);
+            
+        
+
+        marker_d76cb54860954b72ecb14d3d6db1bd78.bindPopup(popup_7cd2a8d88505728b6a5d0f3113617c2a)
+        ;
+
+        
+    
+    
+            var marker_c70cb6aca31e7ccf5aa42ac7e07119c3 = L.marker(
+                [48.8578329, 2.3622643],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_8e2b1a125c3c4a793bd852d68de20099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c70cb6aca31e7ccf5aa42ac7e07119c3.setIcon(icon_8e2b1a125c3c4a793bd852d68de20099);
+        
+    
+        var popup_6c77bcd3882e7d878da98d81c0c2cbdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75e91d7c508ab4b8e7c44815a29cb46b = $(`<div id="html_75e91d7c508ab4b8e7c44815a29cb46b" style="width: 100.0%; height: 100.0%;">Payenne - Square George Caïn - Vélos disponibles: 19 - Distance: 294.65 m</div>`)[0];
+                popup_6c77bcd3882e7d878da98d81c0c2cbdf.setContent(html_75e91d7c508ab4b8e7c44815a29cb46b);
+            
+        
+
+        marker_c70cb6aca31e7ccf5aa42ac7e07119c3.bindPopup(popup_6c77bcd3882e7d878da98d81c0c2cbdf)
+        ;
+
+        
+    
+    
+            var marker_078112a357ab75b3566c54a64c4cb825 = L.marker(
+                [48.8512971, 2.3624535],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_fa54818a11c816ef01d4f48922a5c373 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_078112a357ab75b3566c54a64c4cb825.setIcon(icon_fa54818a11c816ef01d4f48922a5c373);
+        
+    
+        var popup_b34edf02ae2b1a3b671370efb8de7265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e1b9ba1671445a75366ec9ea1dc700a = $(`<div id="html_0e1b9ba1671445a75366ec9ea1dc700a" style="width: 100.0%; height: 100.0%;">Quai des Célestins - Henri IV - Vélos disponibles: 8 - Distance: 488.76 m</div>`)[0];
+                popup_b34edf02ae2b1a3b671370efb8de7265.setContent(html_0e1b9ba1671445a75366ec9ea1dc700a);
+            
+        
+
+        marker_078112a357ab75b3566c54a64c4cb825.bindPopup(popup_b34edf02ae2b1a3b671370efb8de7265)
+        ;
+
+        
+    
+    
+            var marker_83b4dccf4ff30c2ce79e97b8679fe457 = L.marker(
+                [48.858256413365815, 2.35821794718504],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_b7c6734fbd31507c0641bb48555db269 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_83b4dccf4ff30c2ce79e97b8679fe457.setIcon(icon_b7c6734fbd31507c0641bb48555db269);
+        
+    
+        var popup_162310e48960b00e45d4b095dfbe7c04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6628af7c3c471d79229d4220c67a947 = $(`<div id="html_a6628af7c3c471d79229d4220c67a947" style="width: 100.0%; height: 100.0%;">Vieille du Temple - Francs Bourgeois - Vélos disponibles: 24 - Distance: 347.68 m</div>`)[0];
+                popup_162310e48960b00e45d4b095dfbe7c04.setContent(html_a6628af7c3c471d79229d4220c67a947);
+            
+        
+
+        marker_83b4dccf4ff30c2ce79e97b8679fe457.bindPopup(popup_162310e48960b00e45d4b095dfbe7c04)
+        ;
+
+        
+    
+    
+            var marker_a4eedd196bfe2b17ec29cb66fb1de455 = L.marker(
+                [48.855692253233, 2.3579058051109],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_a008611d02bac10a0a07fde15e296984 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a4eedd196bfe2b17ec29cb66fb1de455.setIcon(icon_a008611d02bac10a0a07fde15e296984);
+        
+    
+        var popup_149ad2f444a690446be7432cdf260ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa0c43a570ba28d9d00c5b8ed4568ea4 = $(`<div id="html_aa0c43a570ba28d9d00c5b8ed4568ea4" style="width: 100.0%; height: 100.0%;">Tiron - Rivoli - Vélos disponibles: 24 - Distance: 184.54 m</div>`)[0];
+                popup_149ad2f444a690446be7432cdf260ac3.setContent(html_aa0c43a570ba28d9d00c5b8ed4568ea4);
+            
+        
+
+        marker_a4eedd196bfe2b17ec29cb66fb1de455.bindPopup(popup_149ad2f444a690446be7432cdf260ac3)
+        ;
+
+        
+    
+    
+            var marker_996dc0a10aaf8be3857e9b7ef3ee398a = L.marker(
+                [48.858158956779, 2.3647149920992],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_96669de0d55a59c339e8558691765928 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_996dc0a10aaf8be3857e9b7ef3ee398a.setIcon(icon_96669de0d55a59c339e8558691765928);
+        
+    
+        var popup_0980684936b272b36803993c5ba204d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3ecdbd7adcdcc20f6510053cd593bd4 = $(`<div id="html_c3ecdbd7adcdcc20f6510053cd593bd4" style="width: 100.0%; height: 100.0%;">Saint-Gilles - Turenne - Vélos disponibles: 14 - Distance: 433.53 m</div>`)[0];
+                popup_0980684936b272b36803993c5ba204d7.setContent(html_c3ecdbd7adcdcc20f6510053cd593bd4);
+            
+        
+
+        marker_996dc0a10aaf8be3857e9b7ef3ee398a.bindPopup(popup_0980684936b272b36803993c5ba204d7)
+        ;
+
+        
+    
+    
+            var marker_f6ba43b7ed35ac77c4c9ca1bc21407b1 = L.marker(
+                [48.852639866625, 2.3607301712036],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_0842912f687f0e81a79b141bdf6b2b38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f6ba43b7ed35ac77c4c9ca1bc21407b1.setIcon(icon_0842912f687f0e81a79b141bdf6b2b38);
+        
+    
+        var popup_369f0a1303a58f901f8f7e20408b56fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fa8085b7c0457a42fecfff6e4144374 = $(`<div id="html_6fa8085b7c0457a42fecfff6e4144374" style="width: 100.0%; height: 100.0%;">Village Saint-Paul - Vélos disponibles: 17 - Distance: 316.84 m</div>`)[0];
+                popup_369f0a1303a58f901f8f7e20408b56fe.setContent(html_6fa8085b7c0457a42fecfff6e4144374);
+            
+        
+
+        marker_f6ba43b7ed35ac77c4c9ca1bc21407b1.bindPopup(popup_369f0a1303a58f901f8f7e20408b56fe)
+        ;
+
+        
+    
+    
+            var marker_71bbc2c332423deea03e10fe955b9b38 = L.marker(
+                [48.8550222, 2.3612322],
+                {}
+            ).addTo(map_52392660072b61cce8669757803f8cdf);
+        
+    
+            var icon_699f222d94b067effc422321a64abfb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_71bbc2c332423deea03e10fe955b9b38.setIcon(icon_699f222d94b067effc422321a64abfb2);
+        
+    
+        var popup_34fcf8af6567d71ff964628c8939e316 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8c825c4e2a9ef777899c71d1720aa72 = $(`<div id="html_d8c825c4e2a9ef777899c71d1720aa72" style="width: 100.0%; height: 100.0%;">Saint-Antoine Sévigné - Vélos disponibles: 21 - Distance: 79.03 m</div>`)[0];
+                popup_34fcf8af6567d71ff964628c8939e316.setContent(html_d8c825c4e2a9ef777899c71d1720aa72);
+            
+        
+
+        marker_71bbc2c332423deea03e10fe955b9b38.bindPopup(popup_34fcf8af6567d71ff964628c8939e316)
+        ;
+
+        
+    
+</script>
+</html>

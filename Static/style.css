@@ -1,0 +1,95 @@
+/* Dégradé de fond pour une ambiance dynamique */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to bottom right, #cce7ff, #99ccff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centrer le contenu verticalement */
+}
+
+/* Styles du titre */
+h1 {
+    text-align: center;
+    color: #0d47a1; /* Couleur bleu foncé */
+    margin-top: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Flou de fond pour un effet moderne */
+}
+
+/* Styles du formulaire */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column; /* Orientation verticale des éléments */
+}
+
+/* Styles pour le champ de texte */
+input[type="text"] {
+    padding: 15px;
+    border: 2px solid #0d47a1; /* Bordure de couleur bleu foncé */
+    border-radius: 25px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition pour l'interaction */
+    margin-bottom: 15px; /* Espacement entre le champ et le bouton */
+}
+
+/* Effet au focus */
+input[type="text"]:focus {
+    border-color: #42a5f5; /* Bordure bleue claire au focus */
+    box-shadow: 0 0 10px rgba(66, 165, 245, 0.5); /* Ombre portée */
+}
+
+/* Styles du bouton */
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #0d47a1; /* Fond bleu foncé */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition pour l'interaction */
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: #1565c0; /* Bleu plus clair */
+    transform: translateY(-2px); /* Légère élévation */
+}
+
+/* Style du footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #0d47a1; /* Couleur bleu foncé */
+    text-decoration: none;
+    transition: color 0.3s; /* Transition pour l'interaction */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Souligner au survol */
+    color: #42a5f5; /* Couleur bleu clair au survol */
+}
